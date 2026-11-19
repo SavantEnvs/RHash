@@ -1,0 +1,1 @@
+﻿%L %{ed2k-link}\n%u%{tth} %xB{sha256} %b{md5}\n%s %{size} %T %M\n

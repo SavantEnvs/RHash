@@ -1,0 +1,1 @@
+%{sha3-512} %{blake3} %{gost12-256} %@{btih} %x{crc32c} %{urlname} %Uf %d\t\\0\n

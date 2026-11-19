@@ -1,0 +1,9 @@
+project: savantenvs/RHash
+target: rhash-check
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/rhash-check/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/rhash -c @@
+    afl: true
+    timeout: 10

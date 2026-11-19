@@ -1,0 +1,10 @@
+project: savantenvs/RHash
+target: rhash-template
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/rhash-template/testsuite
+cmds:
+  # mayhem-lint: ok-image-path (test1K.data is only read: the file whose digests the template prints)
+  - cmd: /mayhem/mayhem/out/rhash --template=@@ /mayhem/tests/test1K.data
+    afl: true
+    timeout: 10

@@ -1,0 +1,1 @@
+%{snefru256} %{has160} %{edon-r512} %{whirlpool} %{ripemd160} %{aich} %{torrent} %%\n
